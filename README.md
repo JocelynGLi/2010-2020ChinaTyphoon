@@ -23,3 +23,5 @@ shapely
 streamlit
 
 p.s. 请将百度地图和Mapbox的API更换成你的
+
+If you have any question, feel free to contact me by email(jocelynli0413@gmail.com).
