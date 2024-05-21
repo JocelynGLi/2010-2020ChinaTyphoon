@@ -75,7 +75,7 @@ def filter(allinfo, extent):
 
 #绘制台风路径图，返回结果为图
 def trace_point_shows(df, id):
-    token = 'pk.eyJ1Ijoiam9jZWx5bmxpMDQxMyIsImEiOiJjbHV1a3RhMjQwYjl1Mmtxd2FlZm4wM3N0In0.ln9hZL_x5s7B8nLQfW8tBw'
+    token = '' # fill in with your token
     df = df[df['Id'] == int(id)]
     df.columns = ['台风编号', '年', '月', '日', '时刻', '纬度', '经度', '气压(hPa)', '风速(kt)', '等级', '时间']
     fig = px.scatter_mapbox(df,
@@ -145,7 +145,7 @@ def JZH_photo():
         typhoon_city = pd.DataFrame({})
         service ="http://api.map.baidu.com/geocoding/v3/?"
         output = "json"
-        AK= 'D9nXZhPHVlt5lWhf6ymMskmaMjdySRoS'
+        AK= '' # fill in with your AK
         typhoon_city['name']=all_cities
         typhoon_city['photo']=None
         typhoon_city['lon']=None
